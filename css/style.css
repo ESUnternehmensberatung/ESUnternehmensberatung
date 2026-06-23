@@ -746,7 +746,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .affiliate__intro .section-intro { margin: .75rem auto 0; }
 .affiliate__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 .affiliate-card {
@@ -935,7 +935,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .services__grid { grid-template-columns: 1fr 1fr; }
   .services__header { grid-template-columns: 1fr; }
 
-  .affiliate__grid { grid-template-columns: 1fr; }
+  .affiliate__grid { grid-template-columns: 1fr 1fr; }
 
   .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
   .footer__bottom { flex-direction: column; text-align: center; }
