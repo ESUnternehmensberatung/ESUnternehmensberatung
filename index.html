@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://schmal-unternehmensberatung.de/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -65,20 +65,6 @@
         </a>
         <a href="#leistungen" class="btn btn-outline">Leistungen ansehen</a>
       </div>
-      <div class="hero__stats">
-        <div>
-          <div class="hero__stat-num">20+</div>
-          <div class="hero__stat-label">Jahre Erfahrung</div>
-        </div>
-        <div>
-          <div class="hero__stat-num">100+</div>
-          <div class="hero__stat-label">Projekte abgeschlossen</div>
-        </div>
-        <div>
-          <div class="hero__stat-num">€3.500</div>
-          <div class="hero__stat-label">BAFA-Förderung möglich</div>
-        </div>
-      </div>
     </div>
     <div class="hero__visual fade-up" style="padding-right:clamp(1.25rem,4vw,2.5rem)">
       <div class="hero__img-wrap">
@@ -88,7 +74,9 @@
           <span>Ihr Foto kommt hier hin</span>
         </div>
         <div class="hero__badge">
-          <div class="hero__badge-icon">🎓</div>
+          <div class="hero__badge-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
           <div class="hero__badge-text">
             <strong>IHK KI Manager</strong>
             <span>zertifiziert</span>
@@ -128,33 +116,40 @@
   <div class="container">
     <div class="problem__grid">
       <div class="reveal">
-        <span class="section-label">Das Problem</span>
         <h2 class="section-title">Kennen Sie das?</h2>
         <p class="section-intro">Viele KMU wissen, dass sie sich modernisieren müssen — aber es hapert an der Umsetzung.</p>
         <div class="problem__pain-list">
           <div class="problem__pain-item">
-            <div class="pain-icon">⏰</div>
+            <div class="pain-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
             <div>
               <strong>Zu viel Zeit für Routineaufgaben</strong>
               <p style="font-size:.88rem;color:var(--clr-text-muted);margin-top:.2rem">E-Mails, Berichte, Dateneingabe — alles manuell.</p>
             </div>
           </div>
           <div class="problem__pain-item">
-            <div class="pain-icon">🤯</div>
+            <div class="pain-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
             <div>
               <strong>KI-Überforderung</strong>
               <p style="font-size:.88rem;color:var(--clr-text-muted);margin-top:.2rem">100 Tools, kein Plan — was passt wirklich zu uns?</p>
             </div>
           </div>
           <div class="problem__pain-item">
-            <div class="pain-icon">💸</div>
+            <div class="pain-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
             <div>
               <strong>Fördertöpfe ungenutzt</strong>
               <p style="font-size:.88rem;color:var(--clr-text-muted);margin-top:.2rem">BAFA zahlt bis zu €3.500 — die meisten wissen das nicht.</p>
             </div>
           </div>
           <div class="problem__pain-item">
-            <div class="pain-icon">📋</div>
+            <div class="pain-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
             <div>
               <strong>Berater ohne Ergebnis</strong>
               <p style="font-size:.88rem;color:var(--clr-text-muted);margin-top:.2rem">Viel Präsentation, wenig Umsetzung, null Messbarkeit.</p>
@@ -187,26 +182,35 @@
   <div class="container">
     <div class="services__header">
       <div class="reveal">
-        <span class="section-label">Leistungen</span>
         <h2 class="section-title">Was ich für Sie tue</h2>
       </div>
       <a href="#kontakt" class="btn btn-outline reveal">Alle Leistungen anfragen</a>
     </div>
     <div class="services__grid">
+      <!-- Featured: full-width horizontal strip -->
       <div class="service-card featured reveal">
-        <div class="service-icon">🤖</div>
-        <h3>KI-Einführung & Agenten</h3>
-        <p>Von der Auswahl der richtigen Tools bis zur fertig laufenden KI-Automatisierung — ich setze um, nicht nur hin.</p>
-        <div class="service-tags">
-          <span class="service-tag">Langdock</span>
-          <span class="service-tag">Copilot</span>
-          <span class="service-tag">ChatGPT</span>
-          <span class="service-tag">Agenten</span>
-          <span class="service-tag">Schulung</span>
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 7h.01M11 7h6M7 11h3M12 11h5"/></svg>
+        </div>
+        <div class="service-card__text">
+          <h3>KI-Einführung & Agenten</h3>
+          <p>Von der Auswahl der richtigen Tools bis zur fertig laufenden KI-Automatisierung — ich setze um, nicht nur hin.</p>
+          <div class="service-tags">
+            <span class="service-tag">Langdock</span>
+            <span class="service-tag">Copilot</span>
+            <span class="service-tag">ChatGPT</span>
+            <span class="service-tag">Agenten</span>
+            <span class="service-tag">Schulung</span>
+          </div>
+        </div>
+        <div class="service-card__actions">
+          <a href="#kontakt" class="btn btn-primary">Jetzt anfragen →</a>
         </div>
       </div>
       <div class="service-card reveal">
-        <div class="service-icon">⚙️</div>
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+        </div>
         <h3>Prozess- & Strukturoptimierung</h3>
         <p>Welche Abläufe kosten Sie täglich Zeit? Wir machen sie schneller, schlanker und fehlerfrei.</p>
         <div class="service-tags">
@@ -216,7 +220,9 @@
         </div>
       </div>
       <div class="service-card reveal">
-        <div class="service-icon">💰</div>
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
         <h3>BAFA-Förderung</h3>
         <p>Bis zu €3.500 staatliche Förderung für Unternehmensberatung — ich beantrage das für Sie.</p>
         <div class="service-tags">
@@ -226,17 +232,20 @@
         </div>
       </div>
       <div class="service-card reveal">
-        <div class="service-icon">🛡️</div>
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
         <h3>Datenschutz & Compliance</h3>
-        <p>DSGVO-konforme Prozesse und rechtssichere Webauftritte — einfach erklärt und umgesetzt mit Insecco.</p>
+        <p>DSGVO-konforme Prozesse und rechtssichere Webauftritte — einfach erklärt und umgesetzt.</p>
         <div class="service-tags">
           <span class="service-tag">DSGVO</span>
-          <span class="service-tag">Insecco</span>
           <span class="service-tag">Datenschutzkonzept</span>
         </div>
       </div>
       <div class="service-card reveal">
-        <div class="service-icon">💼</div>
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+        </div>
         <h3>Business Concierge</h3>
         <p>Versicherungen, Kredite, Marketing, Software — ich koordiniere alle Dienstleister und spare Ihnen Zeit und Geld.</p>
         <div class="service-tags">
@@ -246,7 +255,9 @@
         </div>
       </div>
       <div class="service-card reveal">
-        <div class="service-icon">🖥️</div>
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
         <h3>Software-Einführung & Schulung</h3>
         <p>Lexware, Google Workspace, Microsoft 365 — ich führe ein und schule Ihr Team, bis es wirklich läuft.</p>
         <div class="service-tags">
@@ -254,6 +265,11 @@
           <span class="service-tag">Google Workspace</span>
           <span class="service-tag">M365</span>
         </div>
+      </div>
+      <!-- CTA fill card — prevents empty grid cell -->
+      <div class="service-card service-card--cta reveal">
+        <p>Noch eine individuelle Anfrage?</p>
+        <a href="#kontakt" class="btn btn-outline">Direkt anfragen →</a>
       </div>
     </div>
   </div>
@@ -264,14 +280,34 @@
   <div class="container">
     <div class="ki-check__inner">
       <div class="ki-check__content reveal">
-        <span class="section-label">Kostenloser Check</span>
+        <span class="ki-check__eyebrow">Kostenloser Check</span>
         <h2 class="section-title">Wie KI-bereit ist Ihr Unternehmen?</h2>
         <p class="section-intro">In 5 Fragen (2 Minuten) erfahren Sie, wo Sie stehen — und was der nächste konkrete Schritt ist.</p>
         <div class="ki-check__benefits">
-          <div class="ki-check__benefit"><div class="ki-check__benefit-icon">⚡</div>Sofortiges Ergebnis — kein Warten</div>
-          <div class="ki-check__benefit"><div class="ki-check__benefit-icon">📊</div>Ihr persönlicher KI-Reifegrad-Score</div>
-          <div class="ki-check__benefit"><div class="ki-check__benefit-icon">🎯</div>Konkrete nächste Schritte für Ihr Unternehmen</div>
-          <div class="ki-check__benefit"><div class="ki-check__benefit-icon">🎁</div>100% kostenlos — kein Haken</div>
+          <div class="ki-check__benefit">
+            <div class="ki-check__benefit-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            Sofortiges Ergebnis — kein Warten
+          </div>
+          <div class="ki-check__benefit">
+            <div class="ki-check__benefit-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            Ihr persönlicher KI-Reifegrad-Score
+          </div>
+          <div class="ki-check__benefit">
+            <div class="ki-check__benefit-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            Konkrete nächste Schritte für Ihr Unternehmen
+          </div>
+          <div class="ki-check__benefit">
+            <div class="ki-check__benefit-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            </div>
+            100% kostenlos — kein Haken
+          </div>
         </div>
       </div>
       <div class="ki-check__form-wrap reveal">
@@ -307,17 +343,16 @@
 <section class="products" id="produkte">
   <div class="container">
     <div style="text-align:center;margin-bottom:3.5rem" class="reveal">
-      <span class="section-label">Produkte & Pakete</span>
       <h2 class="section-title">Sofort starten — direkt buchbar</h2>
       <p class="section-intro" style="margin:0 auto">Von digitalen Workbooks bis zur persönlichen Beratung — wählen Sie, was jetzt passt.</p>
     </div>
     <div class="products__label reveal">
-      <span class="products__cat-label">📥 Digitale Produkte — einmalig kaufen, sofort nutzen</span>
+      <span class="products__cat-label">Digitale Produkte — einmalig kaufen, sofort nutzen</span>
     </div>
     <div class="products__grid reveal">
       <div class="product-card">
         <div class="product-card__badge">Digital</div>
-        <div class="product-card__icon">📘</div>
+        <div class="product-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
         <h3>KI-Starter-Workbook für KMU</h3>
         <p>Schritt-für-Schritt-Anleitung: Wie Sie KI sinnvoll in Ihren Arbeitsalltag integrieren — ohne IT-Abteilung, ohne Vorwissen.</p>
         <ul class="product-card__includes">
@@ -332,7 +367,7 @@
       </div>
       <div class="product-card">
         <div class="product-card__badge">Digital</div>
-        <div class="product-card__icon">🖥️</div>
+        <div class="product-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
         <h3>Microsoft 365 Selbst-Check</h3>
         <p>Wissen Sie, was Sie schon haben? Dieses Workbook zeigt, welche M365-Features Ihr Team noch nicht nutzt — und wie Sie das sofort ändern.</p>
         <ul class="product-card__includes">
@@ -347,7 +382,7 @@
       </div>
       <div class="product-card">
         <div class="product-card__badge">Digital</div>
-        <div class="product-card__icon">🚀</div>
+        <div class="product-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
         <h3>Neugründungsguide</h3>
         <p>Alles was Gründerinnen und Gründer wirklich brauchen — von der Rechtsform bis zur ersten Förderung, kompakt und umsetzbar.</p>
         <ul class="product-card__includes">
@@ -362,11 +397,11 @@
       </div>
     </div>
     <div class="products__label reveal" style="margin-top:3rem">
-      <span class="products__cat-label">📅 Buchbare Pakete — persönlich mit Eduard Schmal</span>
+      <span class="products__cat-label">Buchbare Pakete — persönlich mit Eduard Schmal</span>
     </div>
     <div class="products__grid products__grid--pakete reveal">
       <div class="product-card product-card--service">
-        <div class="product-card__icon">⚡</div>
+        <div class="product-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
         <h3>KI-Schulung (2h)</h3>
         <p>Live-Session: Ihr Team lernt, KI-Tools sofort produktiv zu nutzen — praxisnah, ohne Theorie-Überlastung.</p>
         <ul class="product-card__includes">
@@ -381,7 +416,7 @@
       </div>
       <div class="product-card product-card--service product-card--featured">
         <div class="product-card__badge product-card__badge--gold">Beliebt</div>
-        <div class="product-card__icon">🎯</div>
+        <div class="product-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
         <h3>Digitales Transformations&shy;coaching</h3>
         <p>~4 Stunden: Interview, Analyse Ihrer aktuellen Situation und eine priorisierte Umsetzungs-Roadmap — fertig zum Handeln.</p>
         <ul class="product-card__includes">
@@ -396,7 +431,7 @@
         </div>
       </div>
       <div class="product-card product-card--service">
-        <div class="product-card__icon">🤖</div>
+        <div class="product-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 11V9a4 4 0 0 1 8 0v2"/></svg></div>
         <h3>Langdock Basis-Einrichtung</h3>
         <p>Ich richte Langdock produktiv für Ihr Unternehmen ein — von der Installation bis zum ersten laufenden Workflow.</p>
         <ul class="product-card__includes">
@@ -410,7 +445,7 @@
         </div>
       </div>
       <div class="product-card product-card--service">
-        <div class="product-card__icon">🧠</div>
+        <div class="product-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="12" r="10"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
         <h3>Langdock Agenten-Setup</h3>
         <p>Upgrade: Ich baue Ihnen individuelle KI-Agenten — für Vertrieb, Support, HR oder was Ihr Unternehmen am meisten braucht.</p>
         <ul class="product-card__includes">
@@ -424,7 +459,7 @@
         </div>
       </div>
       <div class="product-card product-card--service">
-        <div class="product-card__icon">🌐</div>
+        <div class="product-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
         <h3>Website für KMU</h3>
         <p>Professionell, schnell, ohne Schnickschnack — eine moderne Website, die Leads generiert. Gemeinsam geplant und von mir gebaut.</p>
         <ul class="product-card__includes">
@@ -446,13 +481,12 @@
   <div class="container">
     <div class="freebies__inner reveal">
       <div class="freebies__content">
-        <span class="section-label">Kostenlos für Sie</span>
         <h2 class="section-title">Zwei Checks — sofort, gratis, ohne Haken</h2>
         <p class="section-intro">Finden Sie heraus, wo Ihr Unternehmen steht — bevor Sie einen Euro investieren.</p>
       </div>
       <div class="freebies__cards">
         <div class="freebie-card">
-          <div class="freebie-card__icon">⚡</div>
+          <div class="freebie-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
           <div>
             <h3>KI-Readiness-Check</h3>
             <p>5 Fragen, 2 Minuten, Sofortergebnis — wie KI-bereit ist Ihr Unternehmen wirklich?</p>
@@ -460,7 +494,7 @@
           </div>
         </div>
         <div class="freebie-card">
-          <div class="freebie-card__icon">💰</div>
+          <div class="freebie-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
           <div>
             <h3>Fördermittel-Check</h3>
             <p>Bekommen Sie BAFA-Förderung? In wenigen Klicks herausfinden — bis zu €3.500 geschenkt.</p>
@@ -477,42 +511,42 @@
   <div class="container">
     <div class="concierge__header reveal">
       <span class="section-label">Business Concierge</span>
-      <h2 class="section-title">Ein Anruf — alles geregelt</h2>
+      <h2 class="section-title" style="text-align:center">Ein Anruf — alles geregelt</h2>
       <p class="section-intro">Ich koordiniere die besten Dienstleister für Sie — geprüft, empfohlen, begleitet. Sie sparen Zeit, Nerven und oft bares Geld.</p>
     </div>
     <div class="concierge__grid reveal">
       <div class="concierge-card">
-        <div class="concierge-card__icon">🛡️</div>
+        <div class="concierge-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <h3>Datenschutz & DSGVO</h3>
         <p>DSGVO-Compliance, Datenschutzerklärungen, externer Datenschutzbeauftragter — rechtssicher ohne eigene Rechtsabteilung.</p>
         <a href="#kontakt" class="concierge-card__link">Beratung anfragen →</a>
       </div>
       <div class="concierge-card">
-        <div class="concierge-card__icon">🤖</div>
+        <div class="concierge-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/></svg></div>
         <h3>KI-Software & Tools</h3>
         <p>Die richtigen KI-Tools für Ihr Unternehmen — datenschutzkonform, sinnvoll ausgewählt, produktiv eingeführt.</p>
         <a href="#kontakt" class="concierge-card__link">Beratung anfragen →</a>
       </div>
       <div class="concierge-card">
-        <div class="concierge-card__icon">☁️</div>
+        <div class="concierge-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
         <h3>Collaboration & Cloud</h3>
         <p>E-Mail, Dateiablage, Videokonferenzen, gemeinsames Arbeiten — modern aufgestellt ohne IT-Abteilung.</p>
         <a href="#kontakt" class="concierge-card__link">Beratung anfragen →</a>
       </div>
       <div class="concierge-card">
-        <div class="concierge-card__icon">📊</div>
+        <div class="concierge-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
         <h3>Buchhaltung & Warenwirtschaft</h3>
         <p>Die passende kaufmännische Software für Ihr KMU — eingerichtet, geschult, laufend.</p>
         <a href="#kontakt" class="concierge-card__link">Beratung anfragen →</a>
       </div>
       <div class="concierge-card">
-        <div class="concierge-card__icon">🔒</div>
+        <div class="concierge-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
         <h3>Versicherungen & Absicherung</h3>
         <p>Betriebshaftpflicht, Cyber, Berufsunfähigkeit — ich finde den passenden Schutz für Ihr Unternehmen.</p>
         <a href="#kontakt" class="concierge-card__link">Beratung anfragen →</a>
       </div>
       <div class="concierge-card">
-        <div class="concierge-card__icon">🌐</div>
+        <div class="concierge-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
         <h3>Web, Marketing & Design</h3>
         <p>Website, SEO, Social Media, Branding — professionell umgesetzt von geprüften Partnern, koordiniert von mir.</p>
         <a href="#kontakt" class="concierge-card__link">Beratung anfragen →</a>
@@ -540,7 +574,6 @@
         </div>
       </div>
       <div class="reveal">
-        <span class="section-label">Über mich</span>
         <h2 class="section-title">Der Pragmatiker unter den Beratern</h2>
         <p class="section-intro" style="max-width:100%">
           Nach über 20 Jahren als Führungskraft und Manager in mittelständischen Unternehmen weiß ich:
@@ -552,12 +585,12 @@
           Keine Endlos-Workshops, keine 80-seitigen Konzepte ohne Ergebnis.
         </p>
         <div class="about__values">
-          <div class="about__value"><div class="about__value-icon">🔍</div><span>Bordmittel zuerst</span></div>
-          <div class="about__value"><div class="about__value-icon">⚡</div><span>Schnelle Ergebnisse</span></div>
-          <div class="about__value"><div class="about__value-icon">🤝</div><span>Direkt & ehrlich</span></div>
-          <div class="about__value"><div class="about__value-icon">📈</div><span>Messbare KPIs</span></div>
-          <div class="about__value"><div class="about__value-icon">🏢</div><span>20+ Jahre Erfahrung</span></div>
-          <div class="about__value"><div class="about__value-icon">🎓</div><span>IHK KI Manager</span></div>
+          <div class="about__value"><div class="about__value-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><span>Bordmittel zuerst</span></div>
+          <div class="about__value"><div class="about__value-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><span>Schnelle Ergebnisse</span></div>
+          <div class="about__value"><div class="about__value-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><span>Direkt & ehrlich</span></div>
+          <div class="about__value"><div class="about__value-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><span>Messbare KPIs</span></div>
+          <div class="about__value"><div class="about__value-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><span>20+ Jahre Erfahrung</span></div>
+          <div class="about__value"><div class="about__value-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><span>IHK KI Manager</span></div>
         </div>
         <a href="#kontakt" class="btn btn-primary" style="margin-top:2rem">Gespräch vereinbaren →</a>
       </div>
@@ -609,25 +642,25 @@
         <div class="contact__booking">
           <h3>Termin direkt buchen</h3>
           <p>Wählen Sie einen freien Slot — 30 Minuten, kostenlos, ohne Verpflichtung.</p>
-          <a href="#" class="btn btn-white" style="width:100%;justify-content:center">📅 Termin auswählen</a>
+          <a href="#" class="btn btn-white" style="width:100%;justify-content:center">Termin auswählen →</a>
         </div>
         <div class="contact__channels">
           <a href="tel:+494172431901" class="contact__channel">
-            <div class="contact__channel-icon">📞</div>
+            <div class="contact__channel-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91A16 16 0 0 0 16 17l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 23.73 18.4l-.81-1.48z"/></svg></div>
             <div class="contact__channel-text"><strong>+49 4172 431 90 17</strong><span>Büro · Mo–Fr, 9–17 Uhr</span></div>
           </a>
           <a href="tel:+4915226859524" class="contact__channel">
-            <div class="contact__channel-icon">📱</div>
+            <div class="contact__channel-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
             <div class="contact__channel-text"><strong>+49 1522 685 95 24</strong><span>Mobil · auch abends</span></div>
           </a>
           <a href="mailto:es@schmal-unternehmensberatung.de" class="contact__channel">
-            <div class="contact__channel-icon">✉️</div>
+            <div class="contact__channel-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
             <div class="contact__channel-text"><strong>es@schmal-unternehmensberatung.de</strong><span>Antwort innerhalb von 24h</span></div>
           </a>
         </div>
         <div style="background:var(--clr-surface);border:1px solid var(--clr-border);border-radius:var(--radius-md);padding:1.25rem;margin-top:.75rem">
           <div style="font-size:.82rem;font-weight:600;color:var(--clr-text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem">Region</div>
-          <p style="font-size:.9rem;color:var(--clr-text)">📍 Raum Hamburg / Lüneburg — deutschlandweit auf Anfrage · Remote jederzeit möglich</p>
+          <p style="font-size:.9rem;color:var(--clr-text);display:flex;align-items:center;gap:.5rem"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Raum Hamburg / Lüneburg — deutschlandweit auf Anfrage · Remote jederzeit möglich</p>
         </div>
       </div>
     </div>
