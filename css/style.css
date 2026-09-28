@@ -671,21 +671,14 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   align-items: center;
 }
 .about__img-wrap { position: relative; }
-.about__img-wrap img {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-}
-.about__img-placeholder {
+.about__portrait {
   width: 100%;
   aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center top;
   border-radius: var(--radius-lg);
-  background: linear-gradient(160deg, var(--clr-primary) 0%, var(--clr-primary-lt) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,.5);
-  font-size: .9rem;
+  box-shadow: var(--shadow-lg);
+  display: block;
 }
 .about__quote {
   position: absolute;
