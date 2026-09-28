@@ -13,9 +13,10 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://schmal-unternehmensberatung.de/">
 
+  <link rel="icon" type="image/png" href="Logo ES_Unternehmensberatung.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,8 +26,7 @@
   <div class="container">
     <div class="nav__inner">
       <a href="/" class="nav__logo">
-        <span class="nav__logo-main">Eduard Schmal</span>
-        <span class="nav__logo-sub">Unternehmensberatung</span>
+        <img src="Logo ES_Unternehmensberatung.png" alt="Eduard Schmal Unternehmensberatung" height="44">
       </a>
       <ul class="nav__links">
         <li><a href="#leistungen">Leistungen</a></li>
@@ -47,56 +47,32 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="container" style="display:contents">
-    <div class="hero__content fade-up" style="padding-left:clamp(1.25rem,4vw,2.5rem)">
-      <div class="hero__eyebrow">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polyline></svg>
-        Für KMU mit 1–500 Mitarbeitern
-      </div>
-      <h1 class="hero__title">
-        Kein Berater.<br>
-        Kein Folien-Zauber.<br>
-        <em>Ich setze um.</em>
-      </h1>
-      <p class="hero__subtitle">
-        KI-Einführung, Prozessoptimierung und BAFA-Förderung — mit dem, was Sie schon haben, schnell erste Ergebnisse erzielen.
-      </p>
-      <div class="hero__actions">
-        <a href="#ki-check" class="btn btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          KI-Readiness kostenlos testen
-        </a>
-        <a href="#leistungen" class="btn btn-outline">Leistungen ansehen</a>
-      </div>
-      <div class="hero__stats">
-        <div>
-          <div class="hero__stat-num">20+</div>
-          <div class="hero__stat-label">Jahre Erfahrung</div>
-        </div>
-        <div>
-          <div class="hero__stat-num">100+</div>
-          <div class="hero__stat-label">Projekte abgeschlossen</div>
-        </div>
-        <div>
-          <div class="hero__stat-num">€3.500</div>
-          <div class="hero__stat-label">BAFA-Förderung möglich</div>
-        </div>
-      </div>
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <div class="hero__content fade-up">
+    <p class="hero__eyebrow">Unternehmensberatung für KMU &nbsp;·&nbsp; IHK KI-Manager &nbsp;·&nbsp; BAFA-zertifiziert</p>
+    <h1 class="hero__title">
+      Digitale Transformation<br>im <em>Mittelstand.</em>
+    </h1>
+    <p class="hero__subtitle">
+      KI-Einführung, Prozessoptimierung und BAFA-Förderung — pragmatisch, ohne Umwege, mit messbaren Ergebnissen für Ihr Unternehmen.
+    </p>
+    <div class="hero__actions">
+      <a href="#ki-check" class="btn btn-primary">KI-Readiness kostenlos testen</a>
+      <a href="#leistungen" class="btn btn-outline">Leistungen ansehen</a>
     </div>
-    <div class="hero__visual fade-up" style="padding-right:clamp(1.25rem,4vw,2.5rem)">
-      <div class="hero__img-wrap">
-        <!-- Foto hier einfügen: <img src="images/portrait.jpg" alt="Eduard Schmal"> -->
-        <div class="hero__img-placeholder">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          <span>Ihr Foto kommt hier hin</span>
-        </div>
-        <div class="hero__badge">
-          <div class="hero__badge-icon">🎓</div>
-          <div class="hero__badge-text">
-            <strong>IHK KI Manager</strong>
-            <span>zertifiziert</span>
-          </div>
-        </div>
+    <div class="hero__stats">
+      <div>
+        <div class="hero__stat-num">20+</div>
+        <div class="hero__stat-label">Jahre Erfahrung</div>
+      </div>
+      <div>
+        <div class="hero__stat-num">100+</div>
+        <div class="hero__stat-label">Projekte abgeschlossen</div>
+      </div>
+      <div>
+        <div class="hero__stat-num">€3.500</div>
+        <div class="hero__stat-label">BAFA-Förderung möglich</div>
       </div>
     </div>
   </div>
