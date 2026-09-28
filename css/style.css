@@ -186,7 +186,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 /* === HERO === */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
