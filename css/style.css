@@ -423,6 +423,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .service-card:hover::after { transform: scaleX(1); }
 .service-card.featured {
+  grid-column: span 2;
   background: var(--clr-primary);
   color: #fff;
   border-color: transparent;
@@ -430,22 +431,31 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .service-card.featured::after {
   background: linear-gradient(90deg, var(--clr-accent-lt), var(--clr-accent));
 }
-.service-num {
-  display: inline-block;
-  font-size: .72rem;
-  font-weight: 700;
-  letter-spacing: .12em;
-  color: var(--clr-accent);
-  margin-bottom: 1rem;
+.service-card.highlight {
+  background: rgba(201,168,124,.07);
+  border-color: rgba(201,168,124,.35);
+  border-top: 3px solid var(--clr-accent);
 }
-.service-card.featured .service-num { color: rgba(201,168,124,.7); }
+.service-card.highlight h3 { color: var(--clr-primary); }
+.service-card.highlight .service-tag {
+  background: rgba(201,168,124,.14);
+  color: var(--clr-primary);
+}
+.service-card.wide {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.service-card.wide .service-tags { margin-top: 0; }
 .service-card h3 {
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--clr-primary);
   margin-bottom: .5rem;
 }
-.service-card.featured h3 { color: #fff; }
+.service-card.featured h3 { color: #fff; font-size: 1.2rem; }
 .service-card p {
   font-size: .9rem;
   color: var(--clr-text-muted);
@@ -906,6 +916,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
   .services__grid { grid-template-columns: 1fr 1fr; }
   .services__header { grid-template-columns: 1fr; }
+  .service-card.featured { grid-column: span 2; }
+  .service-card.wide { grid-column: span 2; display: block; }
 
   .affiliate__grid { grid-template-columns: 1fr 1fr; }
 
@@ -917,6 +929,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 @media (max-width: 600px) {
   .services__grid { grid-template-columns: 1fr; }
+  .service-card.featured,
+  .service-card.wide { grid-column: span 1; display: block; }
   .about__values { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .hero__stats { flex-direction: column; gap: 1.5rem; }
